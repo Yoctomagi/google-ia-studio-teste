@@ -1,0 +1,5 @@
+{
+  "name": "Olá Mundo Express",
+  "description": "Um servidor em Node.js e Express que escreve a mensagem Olá Mundo.",
+  "requestFramePermissions": []
+}
