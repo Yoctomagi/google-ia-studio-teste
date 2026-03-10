@@ -1,6 +1,6 @@
-import express from 'express';
-import next from 'next';
-import { parse } from 'url';
+const express = require('express');
+const next = require('next');
+const { parse } = require('url');
 
 const dev = process.env.NODE_ENV !== 'production';
 const hostname = 'localhost';
@@ -19,7 +19,7 @@ app.prepare().then(() => {
 
   // Next.js lida com todas as outras rotas
   server.all(/.*/, (req, res) => {
-    const parsedUrl = parse(req.url!, true);
+    const parsedUrl = parse(req.url, true);
     handle(req, res, parsedUrl);
   });
 
